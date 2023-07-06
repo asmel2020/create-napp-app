@@ -2,7 +2,9 @@ import execa from 'execa';
 import path from 'path';
 import ora from 'ora';
 import * as fs from 'fs';
+import chalk from 'chalk';
 export const gitClone = async (nameProject:string) => {
+
 	console.log();
 	const spinner = ora('Installation in progress... ☕').start();
 
@@ -14,16 +16,25 @@ export const gitClone = async (nameProject:string) => {
 		return
 	}
 
-	await execa('git clone', ['https://github.com/asmel2020/template-nest.git',nameProject]);
+	await execa('git clone', ['https://github.com/asmel2020/NAPP-REST.git',nameProject]);
 
 	spinner.succeed();
 	console.log();
-	console.log(`🚀  Successfully created project ${nameProject}`);
+	console.log(`🚀  Successfully created project ${chalk.blueBright(nameProject)}`);
 	console.log('👉  Get started with the following commands:');
 	console.log();
 	console.log(`$ cd ${nameProject}`);
-	console.log('$ npm install or yarn');
-	console.log('$ yarn run start');
-	console.log();
+	console.log('$ npm install');
+	console.log('$ npm run start');
+	console.log(`
+	
+			${chalk.blue("Thanks for installing NAPP 🙏")}
+		Please consider donating to our open collective
+			to help us maintain this package.
+
+
+  	     🍷  ${chalk.white.bold('Donate:')} {site web}
+	
+	`);
 }
 

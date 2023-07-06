@@ -60,7 +60,7 @@
     }
   },
   "dependencies": {
-    "chalk": "^5.3.0",
+    "chalk": "4.1.2",
     "commander": "^11.0.0",
     "execa": "5.1.1",
     "gitmoji-cli": "^8.4.0",
