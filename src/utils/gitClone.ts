@@ -19,7 +19,7 @@ export const gitClone = async (nameProject:string) => {
 	spinner.succeed();
 	console.log();
 	console.log(`🚀  Successfully created project ${nameProject}`);
-	console.log(`👉  Get started with the following commands:`);
+	console.log('👉  Get started with the following commands:');
 	console.log();
 	console.log(`$ cd ${nameProject}`);
 	console.log('$ npm install or yarn');
