@@ -41,6 +41,7 @@
     "@types/inquirer": "^9.0.3",
     "@types/mocha": "^10.0.1",
     "@types/node": "^20.0.0",
+    "@types/ora": "^3.2.0",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "@typescript-eslint/parser": "^5.54.0",
     "chai": "^4.3.7",
@@ -63,7 +64,7 @@
     "commander": "^11.0.0",
     "execa": "5.1.1",
     "inquirer": "8.0.0",
-    "ora": "^6.3.1",
+    "ora": "^3.4.0",
     "path": "^0.12.7",
     "sitka": "^1.0.6"
   }
