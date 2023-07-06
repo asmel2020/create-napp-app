@@ -7,12 +7,12 @@ export const gitClone = async (nameProject:string) => {
 
 
 	const isExistsProjects=fs.existsSync(path.resolve(nameProject));
+
 	if(isExistsProjects){
 		spinner.fail('The project name already exists');
 		return
 	}
-	console.log('nameProject',nameProject);
-
+	
 	await execa('git clone', ['https://github.com/asmel2020/template-nest.git',nameProject]);
 	spinner.succeed('Clone and Install');
 }
