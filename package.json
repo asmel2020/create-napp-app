@@ -1,6 +1,6 @@
 {
   "name": "create-napp-app",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A complete Node.js project template using TypeScript and following general best practices.",
   "keywords": [
     "typescript",
@@ -34,7 +34,8 @@
     "upgrade": "npx npm-check -u",
     "version": "npm run build && npm run changelog:update",
     "cli": "node dist/cli.js",
-    "start:dev": "ts-node src/cli.ts"
+    "start:dev": "ts-node src/cli.ts",
+    "package:publish": "yarn build && npm publish --access public"
   },
   "devDependencies": {
     "@types/chai": "^4.3.4",

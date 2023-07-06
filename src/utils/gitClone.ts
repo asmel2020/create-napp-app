@@ -28,7 +28,7 @@ export const gitClone = async (nameProject:string) => {
 	console.log('$ npm run start');
 	console.log(`
 	
-			${chalk.blue("Thanks for installing NAPP 🙏")}
+			${chalk.blue('Thanks for installing NAPP 🙏')}
 		Please consider donating to our open collective
 			to help us maintain this package.
 
