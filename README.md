@@ -10,13 +10,6 @@
   Get started with the <a rel="noopener noreferrer" target="_blank" href="https://init.tips">NAPP</a> by running <code>npx create-napp-app@latest</code>
 </p>
 
-<div align="center">
-
- [![NPM version][npm-image]][npm-url]
-[![Downloads][downloads-image]][npm-url]
-
-</div>
-
 ## Table of contents
 
 - <a href="#about">The NAPP</a>
