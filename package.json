@@ -7,11 +7,13 @@
     "template"
   ],
   "author": {
-    "name": "Danny Gonzalez"
+    "name": "Danny Gonzalez",
+    "email": "jesusgalicia2019@gmial.com"
   },
   "license": "MIT",
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/asmel2020/create-napp-app"
   },
   "bin": "dist/cli.js",
   "types": "dist/index.d.ts",
