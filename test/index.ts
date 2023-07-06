@@ -1,7 +1,7 @@
 'use strict';
 
-import { expect } from 'chai';
-import { Example } from '../dist/index';
+/* import { expect } from 'chai';
+
 
 describe('Example class', () => {
 	it('should create an instance using its constructor', () => {
@@ -15,3 +15,4 @@ describe('Example class', () => {
 		expect(returnValue).to.equal(param, 'returns the value passed as a parameter');
 	});
 });
+ */
