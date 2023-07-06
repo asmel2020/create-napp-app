@@ -1,6 +1,6 @@
 {
-  "name": "@asmel/create-test-app",
-  "version": "0.0.8",
+  "name": "create-napp-app",
+  "version": "0.0.2",
   "description": "A complete Node.js project template using TypeScript and following general best practices.",
   "keywords": [
     "typescript",
@@ -63,6 +63,7 @@
     "chalk": "^5.3.0",
     "commander": "^11.0.0",
     "execa": "5.1.1",
+    "gitmoji-cli": "^8.4.0",
     "inquirer": "8.0.0",
     "ora": "^3.4.0",
     "path": "^0.12.7",
