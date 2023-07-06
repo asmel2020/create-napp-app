@@ -1,6 +1,6 @@
 {
-  "name": "create-test-app",
-  "version": "0.0.1",
+  "name": "@asmel/create-test-app",
+  "version": "0.0.7",
   "description": "A complete Node.js project template using TypeScript and following general best practices.",
   "keywords": [
     "typescript",
@@ -67,5 +67,11 @@
     "ora": "^3.4.0",
     "path": "^0.12.7",
     "sitka": "^1.0.6"
+  },
+  "publishConfig": {
+    "ignore": [
+      "src/",
+      "test/"
+    ]
   }
 }
