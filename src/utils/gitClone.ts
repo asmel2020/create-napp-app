@@ -3,7 +3,8 @@ import path from 'path';
 import ora from 'ora';
 import * as fs from 'fs';
 import chalk from 'chalk';
-export const gitClone = async (nameProject:string) => {
+import { listRepository } from './listRepository';
+export const gitClone = async (templateRepository:string,nameProject:string) => {
 
 	console.log();
 	const spinner = ora('Installation in progress... ☕').start();
@@ -16,7 +17,7 @@ export const gitClone = async (nameProject:string) => {
 		return
 	}
 
-	await execa('git clone', ['https://github.com/asmel2020/NAPP-REST.git',nameProject]);
+	await execa('git clone', [listRepository[templateRepository],nameProject]);
 
 	spinner.succeed();
 	console.log();
