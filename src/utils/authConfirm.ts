@@ -3,7 +3,7 @@ import inquirer from 'inquirer';
 const auth=[{
 	type: 'confirm',
 	name: 'isAuth',
-	message: 'Do you want to delete the .git folder?',
+	message: 'Does your project require authentication?',
 	default: true,
 }]
 
