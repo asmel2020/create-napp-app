@@ -1,3 +1,22 @@
+export const selectQuestions = [
+	{
+		type: 'list',
+		name: 'templateRepository',
+		message: 'Select a template de NestJS',
+		choices: [
+			{
+				value: '1',
+				name: 'Default',
+			},
+			{
+				value: '2',
+				name: 'Prisma + PostgreSQL',
+			},
+		],
+	},
+];
+
+
 export const questions = [
 	{
 		type: 'list',
@@ -10,7 +29,7 @@ export const questions = [
 			},
 			{
 				value: '2',
-				name: 'Prisma + PostgreSQL + Auth(JWT)',
+				name: 'Prisma + PostgreSQL',
 			},
 		],
 	},

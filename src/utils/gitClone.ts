@@ -1,23 +1,19 @@
 import execa from 'execa';
-import path from 'path';
 import ora from 'ora';
-import * as fs from 'fs';
 import chalk from 'chalk';
+
 import { listRepository } from './listRepository';
+
 export const gitClone = async (templateRepository:string,nameProject:string) => {
 
+
+	const urlRepository=await listRepository(templateRepository);
+	console.log(urlRepository);
 	console.log();
+	
 	const spinner = ora('Installation in progress... ☕').start();
 
-
-	const isExistsProjects=fs.existsSync(path.resolve(nameProject));
-
-	if(isExistsProjects){
-		spinner.fail('The project name already exists');
-		return
-	}
-
-	await execa('git clone', [listRepository[templateRepository],nameProject]);
+	await execa('git clone', [urlRepository,nameProject]);
 
 	spinner.succeed();
 	console.log();
