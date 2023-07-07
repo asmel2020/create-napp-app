@@ -8,7 +8,6 @@ export const gitClone = async (templateRepository:string,nameProject:string) => 
 
 
 	const urlRepository=await listRepository(templateRepository);
-	console.log(urlRepository);
 	console.log();
 	
 	const spinner = ora('Installation in progress... ☕').start();
