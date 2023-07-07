@@ -1,6 +1,6 @@
 {
   "name": "create-napp-app",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "NAPP - Nest auth template",
   "keywords": [
     "typescript",
