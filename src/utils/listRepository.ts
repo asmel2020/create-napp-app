@@ -1,4 +1,4 @@
-import { authConfirm } from "./authConfirm";
+import { authConfirm } from './authConfirm';
 
 export const listRepository=async (templateRepository:string):Promise<string>=>{
 
