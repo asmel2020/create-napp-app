@@ -3,18 +3,20 @@ import ora from 'ora';
 import chalk from 'chalk';
 
 import { listRepository } from './listRepository';
+import * as fs from 'fs';
 
 export const gitClone = async (templateRepository:string,nameProject:string) => {
 
 
 	const urlRepository=await listRepository(templateRepository);
+
 	console.log();
-	
 	const spinner = ora('Installation in progress... ☕').start();
 
 	await execa('git clone', [urlRepository,nameProject]);
-
+	fs.rmSync(`${nameProject}/.git`, { recursive: true });
 	spinner.succeed();
+	
 	console.log();
 	console.log(`🚀  Successfully created project ${chalk.blueBright(nameProject)}`);
 	console.log('👉  Get started with the following commands:');
