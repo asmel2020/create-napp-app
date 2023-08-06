@@ -67,7 +67,7 @@
     "commander": "^11.0.0",
     "execa": "5.1.1",
     "gitmoji-cli": "^8.4.0",
-    "inquirer": "8.0.0",
+    "inquirer": "9.2.7",
     "ora": "^3.4.0",
     "path": "^0.12.7",
     "sitka": "^1.0.6"
