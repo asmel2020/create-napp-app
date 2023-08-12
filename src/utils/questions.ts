@@ -12,6 +12,10 @@ export const selectQuestions = [
 				value: '2',
 				name: 'Prisma + PostgreSQL',
 			},
+			{
+				value: '3',
+				name: 'Standalone app',
+			}
 		],
 	},
 ];
@@ -30,6 +34,10 @@ export const questions = [
 			{
 				value: '2',
 				name: 'Prisma + PostgreSQL',
+			},
+			{
+				value: '3',
+				name: 'Standalone app',
 			},
 		],
 	},

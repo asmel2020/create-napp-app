@@ -1,6 +1,6 @@
 {
   "name": "create-napp-app",
-  "version": "0.0.10",
+  "version": "0.0.15",
   "description": "NAPP - Nest auth template",
   "keywords": [
     "typescript",
@@ -37,7 +37,7 @@
     "version": "npm run build && npm run changelog:update",
     "cli": "node dist/cli.js",
     "start:dev": "ts-node src/cli.ts",
-    "package:publish": "yarn build && npm publish --access public"
+    "package:publish": "npm run build && npm publish --access public"
   },
   "devDependencies": {
     "@types/chai": "^4.3.4",
