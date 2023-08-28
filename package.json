@@ -65,7 +65,7 @@
   "dependencies": {
     "chalk": "4.1.2",
     "commander": "^11.0.0",
-    "execa": "5.1.1",
+    "execa": "7.1.1",
     "gitmoji-cli": "^8.4.0",
     "inquirer": "8.0.0",
     "ora": "^3.4.0",
